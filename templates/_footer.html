@@ -4,24 +4,30 @@
             {% block footer %}
 
                 <div>
-                    <h3>STYLUS PHOTOGRAPHY</h3>
+                    <h3>{{ page_title|upper }}</h3>
                 </div>
 
                 <div>
-                    <p>Cím</p>
+                    <small>Cím</small>
+                    <hr>
                     <p>Visual Workshop Bt. <br>Budapest, Hungary</p>
                 </div>
 
                 <div>
-                    <p>Elérhetőség</p>
-                    <p>szmatefy@gmail.com</p>
-                    <p>+36-70-3696077</p>
+                    <small>Elérhetőség</small>
+                    <hr>
+                    <p>{{ email }}</p>
+                    <p>{{ phone }}</p>
                 </div>
 
                 <div>
-                    <p>Kövess!</p>
-                    <p>instagram icon...</p>
-                    <p>facebook icon...</p>
+                    <small>Kövess!</small>
+                    <hr>
+                    <div>
+                        <a href={{ instagram }}> <i class="fab fa-instagram"></i></a>
+                        <a href={{ facebook }}> <i class="fab fa-facebook-square"></i></a>
+                    </div>
+
                 </div>
 
             {% endblock %}

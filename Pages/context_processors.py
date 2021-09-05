@@ -5,5 +5,5 @@ def global_context(request):
         "phone": "+36-70-3696077",
         "email": "szmatefy@gmail.com",
         "instagram": "https://www.instagram.com/stylus.photo/",
-        "facebook": "https://www.facebook.com/MatefyPhoto/"
+        "facebook": "https://www.facebook.com/stylusphoto/"
     }
