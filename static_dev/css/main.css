@@ -1,4 +1,11 @@
-h1{
-    color: orange;
-    font-size: 60px;
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-container{
+    background-color: #2a2a2a;
+}
+
+.menu-link{
+    color: white;
 }
