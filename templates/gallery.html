@@ -6,12 +6,23 @@
 
 
 {% block body %}
-    <div class="image-container">
-        {% for item in photos %}
-            <img class="photo-thumbnail" src={{ item.image }} alt="">
-        {% endfor %}
+
+    <div class="gallery-container">
+        <div class="image-container">
+            {% for item in photos %}
+                <img class="photo-thumbnail" src={{ item.image }} alt="">
+            {% endfor %}
+        </div>
+
+        <div>
+            <div class="menu-container">
+                <h3>Nature</h3>
+                <h3>Sport</h3>
+                <h3>Wedding</h3>
+                <h3>Travel</h3>
+            </div>
+        </div>
+
     </div>
-
-
 
 {% endblock body %}
