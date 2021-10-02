@@ -20,6 +20,19 @@
   .footer-container{
     padding: 5px;
   }
+
+  .contact-form{
+    padding: 5px;
+  }
+
+  .gallery-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop-menu{
+    display: none;
+  }
 }
 
 /* Tablet Styles */
@@ -40,11 +53,24 @@
     display: flex;
     flex-direction: column;
   }
+
+  .gallery-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop-menu{
+    display: none;
+  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   body {
     background-color: #B2D6FF; /* Blue */
+  }
+
+  .mobil-menu{
+    display: none;
   }
 }
