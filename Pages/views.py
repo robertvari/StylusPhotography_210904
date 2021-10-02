@@ -3,6 +3,7 @@ from django.views.generic import TemplateView, FormView
 from .models import HomePage, AboutPage
 from Gallery.models import Photo
 from .forms import ContactForm
+from django.core.mail import send_mail
 
 import random
 
@@ -38,9 +39,10 @@ class ContactView(FormView):
         email = form.data["email"]
         message = form.data["message"]
 
-        print("Name:", name)
-        print("Email:", email)
-        print("Message:", message)
+        email_message = f'Name: {name}\n\n'
+        email_message += message
+
+        send_mail('Contact', email_message, email, ['mail.pythonsuli@gmail.com'], fail_silently=False)
 
         return super(ContactView, self).form_valid(form)
 
