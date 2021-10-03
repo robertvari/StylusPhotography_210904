@@ -8,12 +8,6 @@
 {% block body %}
 
     <div class="gallery-container">
-        <div class="mobil-menu">
-            {% include "_category_menu.html" %}
-        </div>
-
-
-
         <div class="image-container">
             {% for photo in photos %}
                 <a href="/gallery/{{ photo.slug }}">
@@ -23,11 +17,9 @@
         </div>
 
 
-
-        <div class="desktop-menu">
+        <div class="category-menu">
             {% include "_category_menu.html" %}
         </div>
-
     </div>
 
 {% endblock body %}
