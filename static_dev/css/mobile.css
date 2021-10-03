@@ -4,6 +4,20 @@
     background-color: #F09A9D; /* Red */
   }
 
+  .mobil-menu{
+    position: sticky;
+    top: 64px;
+  }
+
+  .mobil-menu .menu-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobil-menu .menu-container h3{
+    margin: 0 5px;
+  }
+
   .content-container{
     margin: 10px;
   }
@@ -39,6 +53,20 @@
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   body {
     background-color: #F5CF8E; /* Yellow */
+  }
+
+  .mobil-menu{
+    position: sticky;
+    top: 64px;
+  }
+
+  .mobil-menu .menu-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobil-menu .menu-container h3{
+    margin: 0 5px;
   }
 
   .content-container{
