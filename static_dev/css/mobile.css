@@ -4,6 +4,11 @@
     background-color: #F09A9D; /* Red */
   }
 
+  #nav-menu{
+    flex-direction: column;
+    margin: 0;
+  }
+
   .mobile-menu-button{
     display: inherit;
   }
@@ -19,7 +24,7 @@
 
   .category-menu{
     position: sticky;
-    top: 64px;
+    top: 54px;
     order: -1;
   }
 
